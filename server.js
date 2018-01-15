@@ -29,9 +29,9 @@ hbs.registerHelper('screamIt', (text) => {
     return text.toUpperCase();
 })
 
-app.use((req, res, next) => {
-    res.render('maintenance.hbs');
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs');
+// });
 
 app.use(express.static(__dirname + '/public')); 
 //--dirname -> variable that contains the absolut root to the project
